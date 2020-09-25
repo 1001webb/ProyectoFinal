@@ -5,6 +5,7 @@
  */
 package org.una.aeropuerto.repositories;
 
+import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.una.aeropuerto.entities.Gasto_Mantenimiento;
 
@@ -14,4 +15,5 @@ import org.una.aeropuerto.entities.Gasto_Mantenimiento;
  */
 public interface IGasto_MantenimientoRepository extends JpaRepository<Gasto_Mantenimiento, Long> {
     
+    public List<Gasto_Mantenimiento> findByNumeroContrato(Long numero_contrato);
 }

@@ -16,12 +16,9 @@ import lombok.ToString;
 @ToString
 public class Empleado_AreaDTO {
  
-    private Long id; 
-    private String nombreCompleto;   
-    private String cedula; 
-    private boolean estado; 
-    private Date fechaRegistro; 
-    private Date fechaModificacion;
+    private Long id;
+    private Date fechaRegistro;
+    private long empleado_id;
      
 }
 

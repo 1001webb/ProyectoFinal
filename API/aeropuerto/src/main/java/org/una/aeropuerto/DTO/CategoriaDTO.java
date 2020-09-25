@@ -16,9 +16,7 @@ import lombok.ToString;
 public class CategoriaDTO {
  
     private Long id; 
-    private String nombreCompleto;   
-    private String cedula; 
-    private boolean estado; 
+    private String nombre;
      
 }
 

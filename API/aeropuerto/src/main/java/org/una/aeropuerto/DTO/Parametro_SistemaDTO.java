@@ -16,10 +16,7 @@ import lombok.ToString;
 @ToString
 public class Parametro_SistemaDTO {
  
-    private Long id; 
-    private String nombreCompleto;   
-    private String cedula; 
-    private boolean estado; 
-    private Date fechaRegistro;
+    private Long id;
+    private String nombre;
      
 }

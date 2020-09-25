@@ -15,11 +15,12 @@ import lombok.ToString;
 @ToString
 public class IncidenteDTO {
  
-    private Long id; 
-    private String nombreCompleto;   
-    private String cedula; 
-    private boolean estado; 
-    private Date fechaRegistro;
+    private Long id;
+    private String nombre;
+    private String descripcion;
+    private String responsable;
+    private boolean estado;
+     private Long empleado_area_id;
      
 }
 

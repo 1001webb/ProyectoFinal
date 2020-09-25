@@ -15,10 +15,11 @@ import lombok.ToString;
 @ToString
 public class Gasto_MantenimientoDTO {
  
-    private Long id; 
-    private String nombreCompleto;   
-    private String cedula; 
-    private boolean estado; 
+    private Long id;
     private Date fechaRegistro;
-     
+    private boolean estado;
+    private String proveedor;
+    private String tipoServicio;
+    private Long numero_contrato;
+    
 }

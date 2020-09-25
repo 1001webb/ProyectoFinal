@@ -10,7 +10,7 @@ import org.una.aeropuerto.entities.Area;
  */
 public interface IAreaRepository extends JpaRepository<Area, Long> {
 
-    public List<Area> findByAreaId(Long id);
+    public List<Area> findByNombre(String nombre);
     public List<Area> findByEstdo(boolean estado);
     
 //        @Query("select u from Usuario u where UPPER(u.nombreCompleto) like CONCAT('%',UPPER(:nombreCompleto),'%')\"") 

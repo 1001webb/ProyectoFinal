@@ -16,11 +16,12 @@ import org.una.aeropuerto.entities.Empleado;
  */
 public interface IEmpleadoRepository extends JpaRepository<Empleado, Long> {
 
-    public Empleado findByCedulaAndPasswordEncriptado(String cedula, String passwordEncriptado);
-
+    
     public List<Empleado> findByCedulaContaining(String cedula);
 
     public List<Empleado> findByNombreCompletoContainingIgnoreCase(String nombreCompleto);
+    
+    //public Optional<List<Empleado>> findById(Long id);
     
     
 //        @Query("select u from Usuario u where UPPER(u.nombreCompleto) like CONCAT('%',UPPER(:nombreCompleto),'%')\"") 

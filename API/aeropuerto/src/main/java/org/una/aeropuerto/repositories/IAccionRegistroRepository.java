@@ -8,7 +8,7 @@ import org.una.aeropuerto.entities.AccionRegistro;
  *
  * @author chris
  */
-public interface IAccionesRegistroRepository extends JpaRepository<AccionRegistro, Long> {
+public interface IAccionRegistroRepository extends JpaRepository<AccionRegistro, Long> {
 
     public List<AccionRegistro> findByUsuarioId(Long id);
  
